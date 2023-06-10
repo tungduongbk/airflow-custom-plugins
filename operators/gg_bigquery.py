@@ -141,13 +141,11 @@ class BigqueryTransformPostgreOperator(BaseOperator):
         if self.run_date is None or self.run_date == 'None':
             self.run_date = (context['dag_run'].execution_date + timedelta(hours=7)).strftime('%Y-%m-%d')
         self.log.info('**** Run query with execution date: {}'.format(self.run_date))
-        self.log.info('**** Executing {}'.format(self.sql_builder))
+        self.log.dedug('**** Executing {}'.format(self.sql_builder))
         sql = self.sql_builder(self.run_date)
-        self.log.info('**** Query command: {}'.format(sql))
         df_records = self.bigquery_hook.get_pandas_df(sql)
         records = list(df_records.itertuples(index=False, name=None))
         if len(records) > 0:
-            self.log.info("Get first {}".format(records[0]))
             self.log.info("Start loading {} records to {} ...".format(len(records), self.transferred_table))
             self.insert_data_to_postgres(records)
         else:

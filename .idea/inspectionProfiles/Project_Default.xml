@@ -1,0 +1,44 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="22">
+            <item index="0" class="java.lang.String" itemvalue="kubernetes" />
+            <item index="1" class="java.lang.String" itemvalue="dbt-core" />
+            <item index="2" class="java.lang.String" itemvalue="dbt-sqlserver" />
+            <item index="3" class="java.lang.String" itemvalue="confluent-avro" />
+            <item index="4" class="java.lang.String" itemvalue="ipython" />
+            <item index="5" class="java.lang.String" itemvalue="snowflake-connector-python" />
+            <item index="6" class="java.lang.String" itemvalue="jupyter-server" />
+            <item index="7" class="java.lang.String" itemvalue="dbt-bigquery" />
+            <item index="8" class="java.lang.String" itemvalue="google-cloud-run" />
+            <item index="9" class="java.lang.String" itemvalue="azure-eventhub" />
+            <item index="10" class="java.lang.String" itemvalue="bcrypt" />
+            <item index="11" class="java.lang.String" itemvalue="requests_aws4auth" />
+            <item index="12" class="java.lang.String" itemvalue="tables" />
+            <item index="13" class="java.lang.String" itemvalue="dbt-spark" />
+            <item index="14" class="java.lang.String" itemvalue="trino" />
+            <item index="15" class="java.lang.String" itemvalue="dbt-snowflake" />
+            <item index="16" class="java.lang.String" itemvalue="dbt-trino" />
+            <item index="17" class="java.lang.String" itemvalue="dbt-postgres" />
+            <item index="18" class="java.lang.String" itemvalue="redshift-connector" />
+            <item index="19" class="java.lang.String" itemvalue="aws-secretsmanager-caching" />
+            <item index="20" class="java.lang.String" itemvalue="great_expectations" />
+            <item index="21" class="java.lang.String" itemvalue="google-cloud-iam" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="typing.Coroutine.status_code" />
+          <option value="typing.Coroutine.json" />
+          <option value="type.response" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
